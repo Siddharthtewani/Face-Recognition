@@ -4,7 +4,7 @@ import 'tachyons' ;
 function NavigationLink({onchange,isSignedin}) {
     if(isSignedin){
        return( 
-        <nav className="tr f3 dim link underline pa3 pointer" onClick={()=>onchange("signin")}>
+        <nav className="tr f3 dim link underline pa3 pointer" onClick={()=>onchange("signout")}>
         Signout
         </nav>
        ); 

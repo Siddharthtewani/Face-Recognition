@@ -5,7 +5,7 @@ function FaceRecoganition({imageurl, box}) {
        <div className="center ma" id="maincenterimaging">
          <div className="absolute mt2">
 
-          <img  id="imageofperson"src={imageurl}/>
+          <img  id="imageofperson"  src={imageurl}/>
          <div className="bounding-box" style={{top:box.topRow , right: box.rightCol , bottom: box.bottomRow , left:box.leftCol}}></div>
          </div>
          
