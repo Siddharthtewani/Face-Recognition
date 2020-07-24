@@ -1,17 +1,16 @@
 import React from 'react';
-import 'tachyons' ;
 import Tilt from 'react-tilt';
-import './Logo.css' ;
 
+import './Logo.css';
 
-function Logo() {
+const Logo = () => {
   return (
-    <div>
-                    
-            <Tilt className="tilt shadow-2 br2" options={{ max : 25 }} style={{ height: 150, width: 150 }} >
-            
-            <img className="tilt-inner" alt="Logo" src={"https://th.bing.com/th/id/OIP.oz27vQVBQGX8j6u5s9LhFgHaHa?pid=Api&rs=1" }></img>
-            </Tilt>
+    <div className='ma4 mt0'>
+      <Tilt className="Tilt br2 shadow-2" options={{ max : 55 }} style={{ height: 150, width: 150 }} >
+        <div className="Tilt-inner pa3">
+          <img style={{paddingTop: '5px'}} alt='logo' src={"https://th.bing.com/th/id/OIP.YSt0mqqQf2gLjtHweRKdEgHaHa?pid=Api&rs=1"}/>
+        </div>
+      </Tilt>
     </div>
   );
 }
